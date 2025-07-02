@@ -12,9 +12,48 @@
  <link rel="preload" href="src/gallery.html">
  <link rel="prefetch" href="src/memories.html">
  <link rel="stylesheet" href="../public/css/header.css">
+ <link rel="stylesheet" href="../public/css/blog.css">
+ <link rel="stylesheet" href="../public/css/App.css">
 </head>
 <body>
     <lr-header makeunseeable="blog, Join us"></lr-header>
+    <main id="blog-page">
+  <section class="blog-hero">
+    <h1>More from Us</h1>
+    <p>Explore stories, experiences, and inspiration from our vibrant FAWE Tuseme community.</p>
+  </section>
+
+  <section class="blog-grid">
+    <article class="blog-card">
+      <img src="../public/images/debate-day.jpg" alt="Students debating in a classroom">
+      <div class="card-content">
+        <h2>When Voices Rise: Debate Day Highlights</h2>
+        <p>Students from all grades tackled pressing issues in an electric display of logic, empathy, and courage. Here’s what we learned when young voices take the mic...</p>
+        <a href="#">Read More →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="../public/images/climate-action.jpg" alt="Learners planting trees">
+      <div class="card-content">
+        <h2>Green Hope: Climate Action Week</h2>
+        <p>Through tree-planting and discussion circles, our members championed eco-consciousness and resilience. “We’re not just planting trees—we’re planting change.”</p>
+        <a href="#">Read More →</a>
+      </div>
+    </article>
+
+    <article class="blog-card">
+      <img src="../public/images/tuseme-play.jpg" alt="A student performing on stage">
+      <div class="card-content">
+        <h2>Drama with Purpose: Staging Real Stories</h2>
+        <p>Through powerful skits and poetry, learners unpack themes of gender, identity, and leadership in ways no lecture ever could. Peek behind the curtain...</p>
+        <a href="#">Read More →</a>
+      </div>
+    </article>
+  </section>
+</main>
+<lr-footer></lr-footer>
+
     <script type="module" src="../src/components/header.js"></script>
     <script type="module" src="../src/components/footer.js"></script>
     <script src="../scripts/App.js"></script>

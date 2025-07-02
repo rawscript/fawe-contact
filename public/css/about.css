@@ -1,0 +1,20 @@
+.section-subtitle {
+  text-align: justify;
+}
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  contain: layout;
+  padding: 2rem;
+  text-align: justify;
+
+ 
+}
+
+.about-image:hover {
+  background-size: 110%; /* Zoom-in effect */
+  filter: brightness(0.95) saturate(1.05); /* Slight contrast enhancement */
+   
+}

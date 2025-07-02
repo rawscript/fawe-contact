@@ -6,15 +6,14 @@ class LFooter extends HTMLElement {
           <div class="footer-content">
             <div class="footer-section">
               <h3>Fawe Tuseme Club</h3>
-              <p>123 Community Center Drive<br>Growth City, GC 12345</p>
-              <p>Phone: (555) 123-4567</p>
+              <p>FAWE Kenya First Parklands Avenue & Masari Road Nairobi, Kenya</p>
+              <p>Phone: 0705 474843</p>
               <p>Email: hello@empowermentclub.org</p>
             </div>
             
             <div class="footer-section">
               <h3>Quick Links</h3>
               <a href="src/about.html" target="_self">About Us</a>
-              <a href="src/events.html">Events</a>
               <a href="src/about.html">Membership</a>
               <a href="src/gallery.html">Gallery</a>
               <a href="src/blog.html" target="_self">Blog</a>
@@ -43,7 +42,7 @@ class LFooter extends HTMLElement {
           </div>
 
           <div class="footer-bottom">
-            <p>&copy; 2025 Fawe Tuseme Club. All rights reserved. | Privacy Policy | Terms of Service</p>
+            <p>&copy; 2025 Fawe Tuseme Club. All rights reserved. | Privacy Policy | Terms of Service by IEEE MMU CS</p>
           </div>
         </div>
       </footer>

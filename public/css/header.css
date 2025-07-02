@@ -1,0 +1,14 @@
+#nav-header {
+  transition: background-color 0.3s ease;
+}
+
+#nav-list li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+#nav-list li a:hover {
+  color: #d35400;
+}

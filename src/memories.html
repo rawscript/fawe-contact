@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Fawe Tuseme Club</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/css/App.css">
+     <link rel="stylesheet" href="../public/css/memories.css">
+<!---->
+    <link rel="preload" href="src/blog.html">
+    <link rel="preload" href="src/contact.html">
+    <link rel="preload" href="src/events.html">
+    <link rel="preload" href="src/gallery.html">
+    <link rel="prefetch" href="src/memories.html">
+
+    <link rel="stylesheet" href="../public/css/header.css">
+</head>
+<body>
+       <lr-header makeunseeable="gallery, Join us"></lr-header>
+
+       <lr-gallery></lr-gallery>
+       <lr-footer></lr-footer>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+ <script type="module" src="../src/components/header.js"></script>
+ <script type="module" src="../src/components/gallery.js"></script>
+    <script type="module" src="../src/components/footer.js"></script>
+    <script src="../scripts/App.js"></script>
+    <script src="../scripts/Main.js"></script>
+</body>
+</html>

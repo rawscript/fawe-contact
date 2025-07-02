@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+       <!-- Preload for critical resources -->
+ <link rel="preload" href="src/blog.html">
+ <link rel="preload" href="src/contact.html">
+ <link rel="preload" href="src/events.html">
+ <link rel="preload" href="src/gallery.html">
+ <link rel="prefetch" href="src/memories.html">
+ <link rel="stylesheet" href="../public/css/App.css">
+  <link rel="stylesheet" href="../public/css/header.css">
+</head>
+<body>
+    <section class="about-preview" id="about">
+        <lr-header makeunseeable="about, Join us"></lr-header>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Building Community</h2>
+                <p class="section-subtitle">We're more than just a club - we're a movement of individuals committed to personal growth, community impact, and collective empowerment.</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Why Join Fawe Tuseme Club?</h3>
+                    <p>At Fawe Tuseme Club, we believe that when we lift each other up, we all rise higher. Our supportive community creates lasting friendships while making meaningful change.</p>
+                    
+                    <ul class="feature-list">
+                        <li>Supportive Community Network</li>
+                        <li>Leadership Development</li>
+                        <li>Skill-Building Workshops</li>
+                        <li>Community Service Projects</li>
+                        <li>Personal Growth Journey</li>
+                        <li>Mentorship Opportunities</li>
+                    </ul>
+
+                    <a href="contact.html" target="_self" class="btn btn-primary">Join Our Mission</a>
+                </div>
+
+                <div class="about-image">
+                    <div>
+                        <h3>🌱 Growth Hub</h3>
+                        <p>Where members develop skills and build confidence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   <lr-footer></lr-footer>
+   <script type="module" src="../src/components/header.js"></script>
+    <script type="module" src="../src/components/footer.js"></script>
+    <script src="../scripts/App.js"></script>
+    <script src="../scripts/Main.js"></script>
+</body>
+</html>
+
+

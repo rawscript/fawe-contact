@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Fawe Tuseme Club</title>
+  <link rel="stylesheet" href="../public/css/contact.css" />
+  <link rel="stylesheet" href="../public/css/App.css" />
+  <link rel="stylesheet" href="../public/css/header.css">
+</head>
+<body>
+  <lr-header makeunseeable="contact,events, join"></lr-header>
+
+  <main id="contact-page">
+    <div id="contact-container">
+      <!-- Left: Image -->
+      <div id="contact-image">
+        <img src="../public/images/WhatsApp Image 2025-06-28 at 10.25.48_608fce5a.jpg" alt="Smiling students at a leadership summit" />
+      </div>
+
+      <!-- Right: Form and Contact Details -->
+<div id="contact-form-wrapper">
+  <h1>Get in Touch</h1>
+  <p>
+    We’d love to hear from you! Whether you have a question about our events,
+    membership, or mentorship programs, our team is ready to listen and respond.
+  </p>
+
+  <form id="contact-form" action="">
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <div id="contact-extra">
+    
+  </div>
+</div>
+
+      </div>
+    </div>
+  </main>
+
+  <lr-footer></lr-footer>
+ <script src="../scripts/contact.js"></script>
+  <script type="module" src="../src/components/header.js"></script>
+  <script type="module" src="../src/components/footer.js"></script>
+</body>
+</html>

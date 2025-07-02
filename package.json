@@ -1,0 +1,17 @@
+{
+  "name": "longosua",
+  "version": "1.0.0",
+  "main": "generateGalleryjson.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "build-gallery": "node generateGalleryjson.js"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

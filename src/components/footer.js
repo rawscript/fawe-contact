@@ -19,7 +19,7 @@ class LFooter extends HTMLElement {
               <a href="${basePath}about.html">Membership</a>
               <a href="${basePath}gallery.html">Gallery</a>
               <a href="${basePath}blog.html">Blog</a>
-              <a href="${basePath}contact.html">Join Us</a>
+              <a href="${basePath}contact.html">Contact Us</a>
             </div>
 
             <!-- Rest of your sections remain untouched -->

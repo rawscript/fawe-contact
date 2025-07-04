@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become part of Us</title>
+       <!-- Preload for critical resources -->
+ <link rel="preload" href="src/blog.html">
+ <link rel="preload" href="src/contact.html">
+ <link rel="preload" href="src/events.html">
+ <link rel="preload" href="src/gallery.html">
+ <link rel="prefetch" href="src/memories.html">
+ <link rel="stylesheet" href="../public/css/App.css">
+<link rel="stylesheet" href="../public/css/header.css">
+<link rel="stylesheet" href="../public/css/join.css">
+</head>
+<body>
+<section class="register-section">
+    <lr-header makeunseeable="about, join"></lr-header>
+            <form id="contact-form" class="register-form">
+                <h2>Join Fawe Tuseme Club</h2>
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email Address" required />
+                <input type="tel" name="phone" placeholder="Phone Number" />
+                <textarea name="message" placeholder="Why would you like to join?" rows="4"></textarea>
+                <button type="submit">Submit Request</button>
+            </form>
+            </section>
+<lr-footer></lr-footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <script type="module" src="../src/components/header.js"></script>
+    <script type="module" src="../scripts/join.js"></script>
+      <script type="module" src="../src/components/footer.js"></script>
+    <script src="../scripts/App.js"></script>
+    <script src="../scripts/Main.js"></script>
+</body>
+</html>

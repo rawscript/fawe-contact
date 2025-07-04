@@ -13,7 +13,7 @@ class LHeader extends HTMLElement {
             <li id="nav-about"><a href="about.html">About Us</a></li>
             <li id="nav-gallery"><a href="gallery.html">Gallery</a></li>
             <li id="nav-blog"><a href="blog.html">Blog</a></li>
-            <li id="nav-join"><a href="contact.html">Join Us</a></li>
+            <li id="nav-join"><a href="join.html">Join Us</a></li>
           </ul>
         </nav>
       </header>

@@ -88,33 +88,85 @@
         .nav-links a.active::after {
             width: 100%;
         }
+/* By default, hide the toggle (e.g., on desktop) */
+.mobile-toggle {
+  display: none;
+}
 
-        .mobile-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
+/* Show it only on screens smaller than 768px */
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 22px;
+    cursor: pointer;
+  }
 
-        .mobile-toggle span {
-            width: 25px;
-            height: 3px;
-            background: var(--text-dark);
-            margin: 3px 0;
-            transition: 0.3s;
-        }
+  .mobile-toggle span {
+    display: block;
+    height: 2px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+  .mobile-toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(4px);
 
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f0fdf4" width="1200" height="800"/><circle fill="%2310b981" opacity="0.1" cx="200" cy="200" r="150"/><circle fill="%23059669" opacity="0.1" cx="800" cy="400" r="200"/><circle fill="%2334d399" opacity="0.1" cx="1000" cy="150" r="100"/></svg>');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
+}
+
+.mobile-toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-4px);
+
+}
+.nav-links {
+  display: flex;
+  justify-content: space-between; /* or space-around / space-evenly */
+  align-items: center;
+  padding: 0 20px;
+}
+
+
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: row;
+  }
+  .logo{
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    height: min-content;
+    width: max-content;
+  }
+}
+
+
+     .hero {
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9)),
+              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f0fdf4" width="1200" height="800"/><circle fill="%2310b981" opacity="0.1" cx="200" cy="200" r="150"/><circle fill="%23059669" opacity="0.1" cx="800" cy="400" r="200"/><circle fill="%2334d399" opacity="0.1" cx="1000" cy="150" r="100"/></svg>');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
 
         .hero-content {
             text-align: center;
@@ -200,21 +252,18 @@
             left: 20%;
             animation-delay: 4s;
         }
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 80vh;
+    padding: 4rem 1.5rem;
+    flex-direction: column;
+  }
+}
 
         /* Quick Stats */
-        .quick-stats {
-            position: absolute;
-            bottom: 2rem;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 3rem;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
-            padding: 1.5rem 3rem;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
+   .quick-stats { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; gap: 3rem; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); padding: 1.5rem 3rem; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.2); }
+
 
         .stat {
             text-align: center;
@@ -231,6 +280,22 @@
             font-size: 0.9rem;
             opacity: 0.8;
         }
+        @media (max-width: 768px) {
+                .quick-stats {
+                    position: static; /* Remove absolute positioning */
+                    transform: none;  /* Cancel horizontal centering */
+                    margin: 2rem auto 0; /* Add spacing and center in flow */
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 1rem;
+                    padding: 1rem 1.5rem;
+                    width: 90%;
+                    font-size: 0.9rem;
+                }
+}
+
+
+
 
         /* About Preview */
         .about-preview {

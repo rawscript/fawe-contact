@@ -9,7 +9,7 @@
         });
 
         // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="/"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
@@ -67,10 +67,15 @@
             observer.observe(el);
         });
 
-        // Mobile menu toggle (basic implementation)
-        const mobileToggle = document.querySelector('.mobile-toggle');
-        const navLinks = document.querySelector('.nav-links');
+const mobileToggle = document.querySelector('.mobile-toggle');
+const navLinks = document.querySelector('.nav-links');
 
-        mobileToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+mobileToggle.addEventListener('click', () => {
+  mobileToggle.classList.toggle('open');       // Transforms burger to X
+  navLinks.classList.toggle('active');         // Shows or hides nav
+});
+
+
+        // mobileToggle.addEventListener('click', () => {
+        //     navLinks.classList.toggle('active');
+        // });

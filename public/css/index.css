@@ -156,8 +156,8 @@
 
      .hero {
   height: 100vh;
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.9)),
-              url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%23f0fdf4" width="1200" height="800"/><circle fill="%2310b981" opacity="0.1" cx="200" cy="200" r="150"/><circle fill="%23059669" opacity="0.1" cx="800" cy="400" r="200"/><circle fill="%2334d399" opacity="0.1" cx="1000" cy="150" r="100"/></svg>');
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.9), rgba(5, 150, 105, 0.4)),
+              url('https://fawe-tuseme.onrender.com/public/images/WhatsApp%20Image%202025-06-28%20at%2010.26.05_39f13a27.jpg');
   background-size: cover;
   background-position: center;
   display: flex;

@@ -9,6 +9,35 @@
   transition: color 0.2s ease;
 }
 
-#nav-list li a:hover {
-  color: #d35400;
-}
+/* #nav-list li a:hover {
+  color: #f0fdf4;
+} */
+ #nav-list {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        #nav-list li {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        #nav-list li::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient);
+            transition: width 0.3s ease;
+        }
+
+        #nav-list li:hover::after,
+        #nav-list li.active::after {
+            width: 100%;
+        }

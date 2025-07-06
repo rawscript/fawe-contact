@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our rich history</title>
+       <!-- Preload for critical resources -->
+ <link rel="preload" href="blog.html">
+ <link rel="preload" href="contact.html">
+ <link rel="preload" href="events.html">
+ <link rel="preload" href="gallery.html">
+ <link rel="prefetch" href="memories.html">
+ <link rel="stylesheet" href="../public/css/App.css">
+<link rel="stylesheet" href="../public/css/header.css">
+<link rel="stylesheet" href="../public/css/join.css">
+</head>
+<body>
+<lr-header makeunseeable="about, join"></lr-header>
+  <div id="gallery"></div>
+<lr-footer></lr-footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <script type="module" src="../src/components/header.js"></script>
+    <script type="module" src="../scripts/preview.js"></script>
+      <script type="module" src="../src/components/footer.js"></script>
+
+    <script src="../scripts/App.js"></script>
+    <script src="../scripts/Main.js"></script>
+</body>
+</html>

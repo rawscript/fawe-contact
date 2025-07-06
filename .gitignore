@@ -1,1 +1,4 @@
+#site documentation
 docs/
+.vscode/
+.dist/
